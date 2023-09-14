@@ -1,0 +1,4 @@
+int aaa(int a){
+  <<a
+  =>a
+}

@@ -1,0 +1,50 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "Pointer-Eimla PL",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		}
+	],
+	"repository": {
+		"keywords": {
+			"patterns": [{
+				"name": "keyword.control.pepl",
+				"match": "\\b(if|while|break|continue)\\b"
+			},{
+				"name":"comment.line.pepl",
+				"begin":">:",
+				"end":"\n"
+			},{
+				"name":"constant.numeric.pepl",
+				"match":"(-?\\d*)|(-?\\d*(f|(\\.\\d*)))"
+			},{
+				"name":"constant.language.pepl",
+				"match":"(true|false)"
+			},{
+				"name":"storage.type.pepl",
+				"match":"void|((int|float|bool|string)(\\[\\])*)"
+			},{
+				"name":"entity.name.function.pepl",
+				"match": "([a-zA-Z]+[0-9]*\\()|[a-zA-Z]+[0-9]*\\{.*\\}"
+			}]
+		},
+		"strings": {
+			"name": "string.quoted.double.pepl",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.pepl",
+					"match": "\\\\."
+				}
+			]
+		}
+		
+		
+	},
+	"scopeName": "source.pepl"
+}

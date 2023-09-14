@@ -1,0 +1,25 @@
+{
+  "name": "pepl-support",
+  "displayName": "PEPL Support",
+  "description": "This is support for the postcursor of EPL, PEPL",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.82.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "pepl",
+      "aliases": ["Pointer-Eimla PL", "pepl"],
+      "extensions": [".pepl"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "pepl",
+      "scopeName": "source.pepl",
+      "path": "./syntaxes/pepl.tmLanguage.json"
+    }]
+  }
+}
