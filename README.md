@@ -8,4 +8,5 @@ If you see this repo, solve the [N-Queens II](https://leetcode.com/problems/n-qu
    ```
 2. Move pepl_support to ~/.vscode/extensions
 3. Create a pepl file inside of the cloned file.
-4. Code away!
+4. To run: ```node ${path to test.js} ${file}```
+5. Code away!
